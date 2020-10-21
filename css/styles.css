@@ -79,11 +79,13 @@ body {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
 	background-color: var(--accent-color);
 }
 
-.social-list-link:hover .social-list-svg {
+.social-list-link:hover .social-list-svg,
+.social-list-link:focus .social-list-svg {
 	fill: var(--primary-white-color);
 }
 
