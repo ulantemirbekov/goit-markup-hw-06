@@ -657,13 +657,20 @@ footer .social-list-svg {
 	flex-direction: column;
 }
 
-.modal-form-input:focus,
+/* .modal-form-input:focus,
 .modal-form-message:focus {
 	outline: none;
+} */
+
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-message:hover,
+.modal-form-message:focus {
+	border: 1px solid var(--accent-color);
 }
 
-.modal-form-input:focus {
-	border: 1px solid var(--accent-color);
+.modal-form-message:not(:placeholder-shown) {
+	border-color: var(--accent-color);
 }
 
 .modal-form-input {
@@ -672,6 +679,7 @@ footer .social-list-svg {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding-left: 42px;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field {
@@ -697,6 +705,19 @@ footer .social-list-svg {
 	resize: none;
 	padding: 12px 16px;
 	margin-bottom: 20px;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message::placeholder {
+	font-size: 14px;
+	line-height: 1.14;
+	font-family: Roboto;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-accept-link {
+	color: var(--accent-color);
 }
 
 .modal-form-message-label {
@@ -710,10 +731,6 @@ footer .social-list-svg {
 .modal-form-accept-label {
 	margin: 0 auto;
 	margin-bottom: 20px;
-}
-
-.modal-form-accept:checked + modal-form-accept-label {
-	color: teal;
 }
 
 .modal-button {
