@@ -639,10 +639,6 @@ footer .social-list-svg {
 	fill: var(--title-text-color);
 }
 
-.modal-form-field:focus .modal-svg {
-	fill: var(--accent-color);
-}
-
 .modal-form-title {
 	font-weight: 700;
 	font-size: 20px;
@@ -657,16 +653,24 @@ footer .social-list-svg {
 	flex-direction: column;
 }
 
-/* .modal-form-input:focus,
+.modal-form-input:focus,
 .modal-form-message:focus {
 	outline: none;
-} */
+}
 
 .modal-form-input:hover,
 .modal-form-input:focus,
 .modal-form-message:hover,
 .modal-form-message:focus {
 	border: 1px solid var(--accent-color);
+}
+
+.modal-form-input:hover ~ .modal-svg {
+	fill: var(--accent-color);
+}
+
+.modal-form-input:focus ~ .modal-svg {
+	fill: var(--accent-color);
 }
 
 .modal-form-message:not(:placeholder-shown) {
