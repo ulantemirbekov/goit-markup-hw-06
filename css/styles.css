@@ -75,8 +75,7 @@ body {
 	height: 44px;
 	background-color: #ffffff;
 	border-radius: 50%;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -93,8 +92,7 @@ body {
 	width: 20px;
 	height: 20px;
 	fill: #afb1b8;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* HEADER */
@@ -148,8 +146,7 @@ header .navigation {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -200,8 +197,7 @@ header .navigation {
 
 	display: flex;
 	align-items: center;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-nav .link:hover,
@@ -443,16 +439,17 @@ button {
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
 	color: var(--accent-color);
 	border: 1px solid var(--accent-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-link:hover .clients-svg {
+.clients-list-link:hover .clients-svg,
+.clients-list-link:focus .clients-svg {
 	fill: var(--accent-color);
 }
 
@@ -460,8 +457,7 @@ button {
 	fill: #afb1b8;
 	/* min-width: 40px; */
 	max-height: 52px;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -606,6 +602,12 @@ footer .social-list-svg {
 	padding-top: 40px;
 }
 
+.close-svg {
+	width: 18px;
+	height: 18px;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .close-modal {
 	position: absolute;
 	width: 30px;
@@ -616,17 +618,18 @@ footer .social-list-svg {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+	fill: var(--accent-color);
 }
 
 .is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-}
-
-.close-svg {
-	width: 18px;
-	height: 18px;
 }
 
 .modal-svg {
@@ -637,6 +640,7 @@ footer .social-list-svg {
 	left: 12px;
 	transform: translateY(-50%);
 	fill: var(--title-text-color);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-title {
@@ -802,8 +806,7 @@ footer .social-list-svg {
 	padding: 6px 22px;
 	min-width: 73px;
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list .option:hover,
@@ -824,8 +827,7 @@ footer .social-list-svg {
 	margin: 15px;
 	position: relative;
 	overflow: hidden;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-list .item:hover,
