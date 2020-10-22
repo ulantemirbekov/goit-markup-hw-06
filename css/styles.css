@@ -768,6 +768,7 @@ footer .social-list-svg {
 }
 
 .modal-form-accept:checked + .modal-form-accept-label::before {
+	border: none;
 	background-image: url("../img/icon-check.svg");
 }
 
@@ -783,7 +784,7 @@ footer .social-list-svg {
 	content: "";
 	width: 16px;
 	height: 16px;
-	border: none;
+	border: 1px solid var(--title-text-color);
 	margin-right: 7px;
 }
 
