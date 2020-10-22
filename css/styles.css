@@ -724,10 +724,6 @@ footer .social-list-svg {
 	color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-accept-link {
-	color: var(--accent-color);
-}
-
 .modal-form-message-label {
 	font-size: 12px;
 	line-height: 1.167;
@@ -736,9 +732,29 @@ footer .social-list-svg {
 	margin-bottom: 4px;
 }
 
-.modal-form-accept:checked + .modal-form-accept-label {
+.modal-form-accept-link {
+	color: var(--accent-color);
+}
+
+.modal-svg-check {
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	border: 1px solid var(--title-text-color);
+	border-radius: 2px;
+	cursor: pointer;
+	background-size: cover;
+}
+
+.modal-form-accept-label {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+
+/* .modal-form-accept:checked + .modal-form-accept-label {
 	color: teal;
-	/* background-image: url(../img/modal-icons.svg#icon-check); */
 }
 
 .modal-form-accept-label {
@@ -755,13 +771,7 @@ footer .social-list-svg {
 	height: 16px;
 	border: 1px solid #000000;
 	margin-right: 7px;
-}
-
-.modal-svg-check {
-	width: 16px;
-	height: 15px;
-	margin-right: 7px;
-}
+} */
 
 .modal-button {
 	width: 200px;
