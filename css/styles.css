@@ -767,8 +767,8 @@ footer .social-list-svg {
 	align-items: center;
 }
 
-/* .modal-form-accept:checked + .modal-form-accept-label {
-	color: teal;
+.modal-form-accept:checked + .modal-form-accept-label::before {
+	background-image: url("../img/icon-check.svg");
 }
 
 .modal-form-accept-label {
@@ -783,9 +783,9 @@ footer .social-list-svg {
 	content: "";
 	width: 16px;
 	height: 16px;
-	border: 1px solid #000000;
+	border: none;
 	margin-right: 7px;
-} */
+}
 
 .modal-button {
 	width: 200px;
